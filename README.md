@@ -1,11 +1,10 @@
 # 01shortaiproject
 
-Netid: trbie
-Name: Tristan Biesemeier
-GitHub Repository: https://github.com/trbie/01shortaiproject
-
-Idea:
-Make a simple website that allows you to track what items you have in your pantry/fridge to make an automated shopping list
+- Netid: trbie
+- Name: Tristan Biesemeier
+- GitHub Repository: https://github.com/trbie/01shortaiproject
+- Idea:
+  Make a simple website that allows you to track what items you have in your pantry/fridge to make an automated shopping list
 
 ## Project overview
 
