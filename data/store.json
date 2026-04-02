@@ -1,0 +1,83 @@
+{
+  "items": [
+    {
+      "id": "0124f234-a6bc-4ac4-a89b-bb89f4dad131",
+      "name": "Milk",
+      "quantity": 0,
+      "unit": "gallons",
+      "minDesired": 2,
+      "location": "fridge",
+      "category": "dairy",
+      "storeProduct": {
+        "id": "32",
+        "title": "Milk",
+        "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/milk/thumbnail.webp",
+        "brand": "",
+        "price": 3.49
+      },
+      "updatedAt": "2026-04-02T19:45:10.361Z"
+    },
+    {
+      "id": "849c72fc-06ac-4f04-8d6e-9b88443c2c99",
+      "name": "chips",
+      "quantity": 0,
+      "unit": "bags",
+      "minDesired": 2,
+      "location": "pantry",
+      "category": "junk",
+      "storeProduct": {
+        "id": "upcitemdb-767458962068",
+        "title": "Doritos Nacho Cheese Flavored Tortilla Chips  1 oz (Pack of 40)",
+        "thumbnail": "https://i5.walmartimages.com/asr/eb08b06d-1dde-47db-a116-7e14e779153d.63f6a94414195eef880de00ba604a0e3.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+        "brand": "Doritos",
+        "price": 17.64
+      },
+      "updatedAt": "2026-04-02T19:42:39.814Z"
+    },
+    {
+      "id": "c6d85943-ee33-4d3b-9a76-01a708a95995",
+      "name": "carrots",
+      "quantity": 5,
+      "unit": "units",
+      "minDesired": 2,
+      "location": "fridge",
+      "category": "vegetable",
+      "storeProduct": {
+        "id": "upcitemdb-033383666020",
+        "title": "BOLTHOUSE FARMS, BABY-CUT CARROTS",
+        "thumbnail": "https://i5.walmartimages.com/asr/c825dee2-79a6-47a8-91c3-b2ab48b50a19_1.6c067bd5bcebc227dd0f61f946591c5e.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+        "brand": "Bolthouse Farms",
+        "price": 0
+      },
+      "updatedAt": "2026-04-02T19:42:43.756Z"
+    },
+    {
+      "id": "67e773b9-fcbd-4c0b-a354-c13a29ce9bdc",
+      "name": "yogurt",
+      "quantity": 0,
+      "unit": "cups",
+      "minDesired": 2,
+      "location": "fridge",
+      "category": "diary",
+      "storeProduct": null,
+      "updatedAt": "2026-04-02T19:43:25.779Z"
+    },
+    {
+      "id": "80ae3755-bfb1-4e6f-aee8-1c0e78e1f102",
+      "name": "Eggs",
+      "quantity": 8,
+      "unit": "eggs",
+      "minDesired": 12,
+      "location": "fridge",
+      "category": "produce",
+      "storeProduct": {
+        "id": "dummyjson-23",
+        "title": "Eggs",
+        "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp",
+        "brand": "",
+        "price": 2.99
+      },
+      "updatedAt": "2026-04-02T19:50:51.344Z"
+    }
+  ]
+}

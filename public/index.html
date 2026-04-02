@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kitchen Stock Pulse</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="bg-shape bg-shape-a"></div>
+        <div class="bg-shape bg-shape-b"></div>
+
+        <main class="shell">
+            <header class="hero">
+                <p class="eyebrow">Kitchen Stock Pulse</p>
+                <h1>Track pantry and fridge items, auto-build your shopping list.</h1>
+                <p class="subtext">
+                    Add what you have now, define your minimum target, and this app calculates what
+                    you need to buy.
+                </p>
+            </header>
+
+            <section class="panel">
+                <h2>Add item</h2>
+                <form id="item-form" class="grid-form">
+                    <input name="name" placeholder="Item name" required />
+                    <input
+                        name="quantity"
+                        type="number"
+                        min="0"
+                        step="0.1"
+                        placeholder="Current qty"
+                        required
+                    />
+                    <input
+                        name="minDesired"
+                        type="number"
+                        min="0"
+                        step="0.1"
+                        placeholder="Min desired"
+                        required
+                    />
+                    <input name="unit" placeholder="Unit (eggs, lbs, boxes)" value="units" />
+                    <input
+                        name="location"
+                        placeholder="Location (pantry/fridge/freezer)"
+                        value="pantry"
+                    />
+                    <input
+                        name="category"
+                        placeholder="Category (produce, dairy...)"
+                        value="other"
+                    />
+                    <button type="submit">Save item</button>
+                </form>
+                <p id="status" class="status" aria-live="polite"></p>
+            </section>
+
+            <section class="split">
+                <article class="panel">
+                    <div class="panel-head">
+                        <h2>Current inventory</h2>
+                        <button id="refresh-btn" class="ghost">Refresh</button>
+                    </div>
+                    <div id="items" class="list"></div>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-head">
+                        <h2>Shopping list</h2>
+                    </div>
+                    <div class="shopping-controls">
+                        <input
+                            id="shopping-search"
+                            type="search"
+                            placeholder="Search shopping items"
+                        />
+                        <select id="shopping-location-filter">
+                            <option value="">All locations</option>
+                        </select>
+                        <select id="shopping-category-filter">
+                            <option value="">All categories</option>
+                        </select>
+                        <label class="has-match-toggle">
+                            <input id="shopping-matched-only" type="checkbox" />
+                            <span>Matched products only</span>
+                        </label>
+                    </div>
+                    <div id="shopping-list" class="list"></div>
+                </article>
+            </section>
+        </main>
+
+        <template id="item-card-template">
+            <article class="item-card">
+                <div class="item-main">
+                    <h3></h3>
+                    <p class="meta"></p>
+                </div>
+                <div class="item-actions">
+                    <button class="match ghost">Find product</button>
+                    <button class="edit">Edit</button>
+                    <button class="delete danger">Delete</button>
+                </div>
+            </article>
+        </template>
+
+        <script src="app.js" defer></script>
+    </body>
+</html>
